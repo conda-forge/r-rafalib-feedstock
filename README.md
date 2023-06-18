@@ -1,11 +1,11 @@
-About r-rafalib
-===============
+About r-rafalib-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rafalib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=rafalib
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rafalib-feedstock/blob/main/LICENSE.txt)
 
 Summary: A series of shortcuts for routine tasks originally developed by Rafael A. Irizarry to facilitate data exploration. 
 
