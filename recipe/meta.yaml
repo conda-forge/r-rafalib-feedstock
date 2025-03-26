@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rafalib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rafalib/rafalib_{{ version }}.tar.gz
-  sha256: 13d424a09e0feac38d4a6221de188e14181249434a790e97cfafb9650c95bdb6
+  sha256: 732f87844a1d33053f47bf87a4e25b9c9490a8993a82461ecdaf9e5d63a65437
 
 build:
   noarch: generic
-  number: 1005
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,8 +36,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rafalib
   license: Artistic-2.0
-  summary: 'A series of shortcuts for routine tasks originally developed by Rafael A. Irizarry
-    to facilitate data exploration. '
+  summary: 'A series of shortcuts for routine tasks originally developed by Rafael A. Irizarry to facilitate data exploration. '
   license_family: OTHER
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
 
