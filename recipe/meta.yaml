@@ -10,8 +10,6 @@ source:
     - {{ cran_mirror }}/src/contrib/rafalib_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rafalib/rafalib_{{ version }}.tar.gz
   sha256: e0ad1a7a51e2a5c9583a0f6d01a7b300bdf44f62515af02afddac4f9acef4413
-  patches:
-    - patches/0001-move-biocmanager-to-suggests.patch
 
 build:
   noarch: generic
@@ -23,9 +21,11 @@ build:
 requirements:
   host:
     - r-base
+    - r-biocmanager
     - r-rcolorbrewer
   run:
     - r-base
+    - r-biocmanager
     - r-rcolorbrewer
 
 test:
